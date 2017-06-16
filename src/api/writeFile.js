@@ -5,12 +5,10 @@
 */
 'use-strict'
 
-var a = Drizzle();
-
 
 // Defines the 'writeTextFile()' command
 // TODO: Make way to link files using C++, C#, or C
-Drizzle.writeTextFile( name, path, contents ) {
+function Drizzle.writeTextFile( name, path, contents ) {
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var a = fso.CreateTextFile(path + name + ".txt", true);
   var letter = 0;
