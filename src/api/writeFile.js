@@ -3,8 +3,7 @@
 *
 * Created by @ZippyMagic on 6/16/17. Will be logged
 */
-
-
+'use-strict'
 
 var a = Drizzle();
 
