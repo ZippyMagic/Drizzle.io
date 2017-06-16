@@ -1,7 +1,16 @@
+/*
+* writeFile() API will be worked on
+*
+* Created by @ZippyMagic on 6/16/17. Will be logged
+*/
+
+
+
 var a = Drizzle();
 
 
-
+// Defines the 'writeTextFile()' command
+// TODO: Make way to link files using C++, C#, or C
 Drizzle.writeTextFile( name, path, contents ) {
   var fso = new ActiveXObject("Scripting.FileSystemObject");
   var a = fso.CreateTextFile(path + name + ".txt", true);
@@ -10,8 +19,10 @@ Drizzle.writeTextFile( name, path, contents ) {
   var string = "";
   var string2;
   
+  // Checks to see if '/n' is in, if it is then it breaks to a new line.
+  // Repeats until strings has been fully parsed
   for(I = 0; I < contents.length; I++) {    
-    if(contents.charAt[letter] === "/" && contents.charAt[letter + 1] === "n") {
+    if(contents.charAt[letter] === "/n" && contents.charAt[letter + 1] === "n") {
       letter2 = letter;
       letter = letter2 + 2;
       a.WriteLine(string)
