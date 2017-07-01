@@ -8,7 +8,7 @@ function use(Import) {
             var data = JSON.parse(text);
             var key = data.module-name;
             window[key] = new Object;
-		    });
+	});
     } else if(Import === "FileSystem") {
         FileSystem = new FileSystem();
     } else {
