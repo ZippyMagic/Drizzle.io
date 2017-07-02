@@ -6,7 +6,7 @@
 
 function apiLockFile() {
     this.openFileTerminal = function(err) {
-        <%#lockFile.Run.RunC()%> ;
+        <%#fileControl.Run.RunC()%> ;
         window.onerror = err(error);
     }
 }
