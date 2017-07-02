@@ -6,5 +6,5 @@ This API is called using the [use('FileSystem');](https://github.com/ZippyMagic/
 
 Some examples include:
 
-* FileSystem.writeTextFile("C:/Documents/example.txt", "Greetings Human!", function(err) { return console.log(err); });
-> This example creates a text file at C:/Document/example.txt that contains the text "Greetings Human!", but cancels it if an error has occured and logs it.
+* `FileSystem.writeTextFile("C:\Documents\example.txt", "Greetings Human!", function(err) { return console.log(err); });`
+> This example creates a text file at `C:\Document\example.txt` that contains the text "Greetings Human!", but cancels it if an error has occured and logs it.
