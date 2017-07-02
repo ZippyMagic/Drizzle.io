@@ -5,7 +5,12 @@
 //
 
 function apiLockFile() {
-    this.lockFile = function(loc, pass, err) {
+    this.lockFile = function(err) {
         <%#lockFile.Run.RunC()%> ;
+        window.onerror = err(error);
+    }
+    this.unlockFile = function(err) {
+        <%#unlockFile.Run.RunC()%> ;
+        window.onerror = err(error);
     }
 }
