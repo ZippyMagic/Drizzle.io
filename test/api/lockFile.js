@@ -6,6 +6,6 @@
 
 function apiLockFile() {
     this.lockFile = function(loc, pass, err) {
-        <%#lockFile.Run.CLockFile()%> ;
+        <%#lockFile.Run.RunC()%> ;
     }
 }
