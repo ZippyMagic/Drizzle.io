@@ -1,4 +1,4 @@
-class Run
+namespace Run
 {
     public void RunC()
     {
