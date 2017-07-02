@@ -16,8 +16,11 @@ void main()
         uniEncoding->GetByteCount(recordNumber.ToString());
     String* tempString;
 
+    Console::Write(
+        S"\nEnter the file location");
+    
     FileStream* fileStream = new FileStream(
-        S"Test#@@#.dat", FileMode::OpenOrCreate, 
+        SConsole::ReadLine(), FileMode::OpenOrCreate, 
         FileAccess::ReadWrite, FileShare::ReadWrite);
     try
     {
