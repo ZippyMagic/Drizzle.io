@@ -22,7 +22,7 @@ function FileSystem() {
     // Checks to see if '/n' is in, if it is then it breaks to a new line.
     // Repeats until strings has been fully parsed
     for(I = 0; I < contents.length; I++) {    
-      if(contents.charAt[letter] === "/n" && contents.charAt[letter + 1] === "n") {
+      if(contents.charAt[letter] === "/" && contents.charAt[letter + 1] === "n") {
         letter2 = letter;
         letter = letter2 + 2;
         a.WriteLine(string)
